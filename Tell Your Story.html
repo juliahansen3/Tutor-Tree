@@ -1,0 +1,95 @@
+<html>
+<head>
+  <title> Tutor Tree </title>
+</head>
+<body style="background-color:#00ffff;"</body>
+  <h1 style="color:black; text-align:center; font-size:500%; margin-left: 270px; margin-right: 270px;"> Tutor Tree </h1>
+  <style>
+    ul {
+      position:fixed;
+      top:110;
+      list-style-type: none;
+      margin: 7;
+      padding: 0;
+      overflow: hidden;
+    }
+    a{
+      display:inline-block;
+      text-decoration: none;
+      background-color: white;
+      color: black
+      margin-left: 2.05px;
+      margin-top:0px;
+      margin-bottom:0px;
+      padding: 10px 60px;
+      border: 1px solid black;
+    }
+    a:link {
+      color:black;
+    }
+    a:visited {
+      color:black;
+    }
+    .center{
+      text-align-last: center;
+    }
+    li{
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      border-bottom: 1px solid black
+      margin-left: auto;
+    }
+    li:last-child{
+      border-bottom: none;
+    }
+    .active{
+      background-color: #808080;
+      color: white;
+    }
+
+  </style>
+    <ul>
+    <li> <a href="file:///Users/JuliaHansen1/Documents/Tutor%20Tree/Tutor%20Tree.html"> Home </a> </li>
+    <li> <a href="file:///Users/JuliaHansen1/Documents/Tutor%20Tree/aboutus.html"> About Us </a> </li>
+    <li> <a href="#" class="active"> Tell Your Story </a> </li>
+    <li> <a href="#">Homework Help </a> </li>
+    <li> <a href="#"> Become A Tutor </a> </li>
+    <li> <a href="#">Resources </a> </li>
+    </ul>
+    <br></br>
+
+    <style>
+      article {
+        background-color: #ffffff;
+        border-color:#8000ff
+        margin-left: 10px;
+        margin-right: 20px;
+        padding:30px;
+        width: 95%;
+      }
+    </style>
+    <script type="text/javascript">
+    function response()
+      {
+        var inputs=["Hello"];
+        var input = document.getElementById("fname").value;
+        inputs.push(input);
+        document.getElementById("message").innerHTML=(inputs);
+      }
+    </script>
+    <article>
+      <p style="text-align:center; font-size:34px; color:black;"> <b> Coming Soon!</b> </p>
+      <p style="text-align:center; font-size:18px; color:black;"> We are still working on this page. We hope to publish it soon and appologize for the delay. Thank you for your patience! </p>
+      <div id="main">
+        <form id="form">
+          <input type="text" id="fname">
+        </form>
+        <p style="font-size:14; text-align:center; color: black;" id="message"> <br> </p>
+        <form id="form">
+          <input type="submit" value="Submit" onclick="response()">
+        </form>
+        <button type="button" onClick="response()"> Submit </button>
+      </div>
+    </article>
+</html>
